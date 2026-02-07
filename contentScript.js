@@ -11,30 +11,7 @@
   };
 
   const panel = ui.buildPanel();
-
-  function mountPanel() {
-    if (document.getElementById("wm-root")) {
-      return;
-    }
-    if (!document.body) {
-      return;
-    }
-    document.body.append(panel.container);
-  }
-
-  function ensureMounted() {
-    mountPanel();
-    if (document.getElementById("wm-root")) {
-      return;
-    }
-    const observer = new MutationObserver(() => {
-      mountPanel();
-      if (document.getElementById("wm-root")) {
-        observer.disconnect();
-      }
-    });
-    observer.observe(document.documentElement, { childList: true, subtree: true });
-  }
+  document.body.append(panel.container);
 
   function ensureMaxItems(items) {
     return items.slice(0, ui.MAX_ITEMS);
@@ -230,6 +207,5 @@
     syncUI();
   });
 
-  ensureMounted();
   attachListeners();
 })(window.WorkingMemory || (window.WorkingMemory = {}));

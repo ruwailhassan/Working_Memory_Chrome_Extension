@@ -25,7 +25,7 @@
         background: #0f172a;
         color: #e2e8f0;
         font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-        z-index: 2147483647;
+        z-index: 9999;
         border-left: 1px solid #1e293b;
         display: flex;
         flex-direction: column;

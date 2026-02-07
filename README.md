@@ -33,7 +33,7 @@ A Chrome-compatible extension that injects a persistent **Working Memory** side 
 
 ## What Works / What’s Next
 **What works**
-- Persistent, editable Now Stack with pin/protect toggles.
+- Persistent, editable Now Stack with pin/protect toggles (stored but not yet used in compression).
 - Checkpoint compression (local + optional API).
 - Vault archive/restore.
 - Prompt injection toggle and copy-to-clipboard.

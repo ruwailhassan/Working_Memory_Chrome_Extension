@@ -1,6 +1,6 @@
 # Working Memory Chrome Extension
 
-A Chrome-compatible extension that injects a persistent **Working Memory** side panel into the ChatGPT UI, keeping a visible Now Stack (max 7 items) and enabling checkpoint compression, archives, and prompt injection.
+A Chrome-compatible extension that injects a persistent **Working Memory** side panel into the ChatGPT UI, keeping a visible Now Stack (max 7 items) and enabling checkpoint compression, archives, and prompt injection. This project was built using codex.
 
 ## Features
 - **Side panel UI** with a Now Stack (max 7 bullets) and inline editing.
